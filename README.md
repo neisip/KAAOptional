@@ -8,7 +8,7 @@
     <a href="https://github.com/Carthage/Carthage"><img alt="Carthage" src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"/></a>
 </p>
 
-KAAOptional is Objective-C library which adds Optional
+KAAOptional is Objective-C library which adds Optional support.
 
 - [Features](#features)
 - [Usage](#usage)
@@ -17,11 +17,10 @@ KAAOptional is Objective-C library which adds Optional
 ## Features
 
 - [x] Lightweight Generics for content value
-- [x] Dictionary now returns Optionals with content on subscript !
+- [x] Dictionary now can return Optionals on subscript methods call
 - [x] Full Java 8 syntax (streams, control flow, functional extensions: map, flatMap, filter)
-- [x] Optionals chaining support!
-- [x] Optionals don't crash on unrecognised message sent. (same as nil messaging)
-- [x] Optionals proxy messages to it's content!
+- [x] Optional behave same way as swift optional: chaining support, doesn't crash on unrecognised message sent if empty and crashes if not and value cannot respond, proxies messages to it's value, behaves same on equality.
+- [x] Dot notation support
 - [x] Tested and well documented
 
 ## Usage
@@ -58,7 +57,7 @@ In Objective-C with KAAOptional:
 }]];
 ```
 
-# Get functional sugar.
+# Get functional extensions.
 
 Now in swift:
 
@@ -114,8 +113,9 @@ In Objective-C using Optional
 
 You can enable it pointwise by calling *"op"* method on Dictionary.
 Or enable it by default by calling *"[NSDictionary kaa_enableOptionalByDefault]"* once anywhere.
-But beware - even though Optional behaves like proxy: isEqual, isKindOfClass, isMemberOfClass will work fine on old code,
-calling +class and +superClass - will return Optional and NSObject.
+**⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️**
+Beware - even though Optional behaves like proxy: `-isEqual`, `-isKindOfClass`, `-isMemberOfClass` will work fine on old code,
+calling `+class` and `+superClass` - will return `Optional` and `NSObject`.
 
 ```
 __auto_type a = @{
@@ -131,7 +131,7 @@ NSLog(@"%@", a[@"wrongKey"]); //-> <Optional: 0xSomeAddress, Value: nil>
 ...
 __auto_type a = [@{
                   @"K": [MyObject new]
-                 }[@"K"] myOldMessage];
+                 }[@"K2"] myOldMessage];
 // Will react same as nil messaging
 NSLog(@"I didn't crash!");
 
