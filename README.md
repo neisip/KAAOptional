@@ -80,7 +80,7 @@ In Objective-C with KAAOptional using functional :
     return Optional.of(@"123");
 }
 
-__unused __auto_type const a = [[[self fetchResult] filter:^BOOL(NSString * _Nonnull aValue) {
+__auto_type const a = [[[self fetchResult] filter:^BOOL(NSString * _Nonnull aValue) {
       return aValue.integerValue > 123 && [aValue isKindOfClass:[NSString class]];
   }] orElse:@"404"];
 
@@ -88,17 +88,18 @@ NSLog(@"%@", a);
 ```  
 or with .dot notation
 ```
-__unused __auto_type const b = [self fetchResult]
+__auto_type const b = [self fetchResult]
   .filter(^BOOL(NSString * _Nonnull aValue) {
       return aValue.integerValue > 123 && [aValue isKindOfClass:[NSString class]];
   }).orElse(@"404");
 NSLog(@"%@", b);
 ```
 
-*Supports Java 8 style
+Supports Java 8 style
 - stream
 - map
-- flatMap*
+- flatMap
+- filter
 
 # Subscript on Dictionary now returns Optional.
 
