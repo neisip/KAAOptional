@@ -27,7 +27,7 @@ KAAOptional is Objective-C library which adds Optional support.
 
 # Control flow:
 
-Now in swift:
+> Now in swift 5.0:
 ```
 func fetch() -> String? {
   //Some big work
@@ -42,7 +42,7 @@ if let e = fetch() {
   print("Empty")
 }
 ```
-In Objective-C with KAAOptional:
+> In Objective-C with KAAOptional:
 ```
 - (nonnull Optional<NSString *> *)fetch {
     //Some big work
@@ -59,7 +59,7 @@ In Objective-C with KAAOptional:
 
 # Get functional extensions.
 
-Now in swift:
+> Now in swift 5.0:
 
 ```
 var res = "404"
@@ -72,7 +72,7 @@ r > 123 {
 print(res)
 
 ```
-In Objective-C with KAAOptional using functional :
+> In Objective-C with KAAOptional using functional extensions:
 ```
 - (nonnull Optional<NSString *> *)fetch {
     //Some big work
@@ -86,7 +86,7 @@ __auto_type const a = [[[self fetchResult] filter:^BOOL(NSString * _Nonnull aVal
 
 NSLog(@"%@", a);
 ```  
-or with .dot notation
+> or with .dot notation
 ```
 __auto_type const b = [self fetchResult]
   .filter(^BOOL(NSString * _Nonnull aValue) {
@@ -103,7 +103,7 @@ Supports Java 8 style
 
 # Subscript on Dictionary now returns Optional.
 
-In swift:
+> In swift:
 ```
 var a = ["K": "V"]["K"] // Returns Optional
 if let a = a { // Unwraps
@@ -126,7 +126,7 @@ NSLog(@"%@", a[@"K"]); //-> <Optional: 0xSomeAddress, Value: @"V">
 NSLog(@"%@", a[@"wrongKey"]); //-> <Optional: 0xSomeAddress, Value: nil>
 ```
 
-*Note: Following construct will not crash due to internal catch logic. So your old code is safe!*
+> *Note: Following construct will not crash due to internal catch logic. So your old code is safe!*
 ```
 [NSDictionary kaa_enableOptionalByDefault];
 ...
@@ -137,7 +137,7 @@ __auto_type a = [@{
 NSLog(@"I didn't crash!");
 
 ```
-*Note: Following construct will proxy to value. So it's also safe!*
+> *Note: Following construct will proxy to value. So it's also safe!*
 ```
 [NSDictionary kaa_enableOptionalByDefault];
 ...
@@ -145,7 +145,7 @@ NSUInteger i = [@{@"K": @"V"} length];
 NSLog(@"%@", @(i)); // Will output = 1
 ```
 
-*You can even chain subscript!!!*
+> *You can even chain subscript!!!*
 
 ```
 __auto_type a = @{
@@ -157,13 +157,13 @@ __auto_type a = @{
 
 # Equality
 
-In swift
+> In swift
 ```
 var a = ["K": "V"]["K"]
 print(a == "V") // true
 ```
 
-In Objective-C using KAAOptional
+> In Objective-C using KAAOptional
 ```
 [@{@"K": @"V"}.op[@"K"] isEqual:@"K"] // YES
 ```
