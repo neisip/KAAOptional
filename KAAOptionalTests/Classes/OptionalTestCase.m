@@ -104,8 +104,13 @@
 
 #pragma mark - MSG send
 
-- (void)testThat_It_dontCrashOnWrongMsgSend {
+- (void)testThat_It_CrashesOnWrongMsgSendIfNotEmpty {
     id some = @{@"K": @"1"}.op[@"K"];
+    XCTAssertThrows([some count]);
+}
+
+- (void)testThat_It_DoesntCrashesOnWrongMsgSendIfEmpty {
+    id some = @{@"K": @"1"}.op[@"K2"];
     XCTAssertNoThrow([some count]);
 }
 

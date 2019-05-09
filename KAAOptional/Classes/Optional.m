@@ -155,11 +155,12 @@
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     NSMethodSignature *signature = [super methodSignatureForSelector:aSelector];
-    if (!signature) {
-        signature = [self.value methodSignatureForSelector:aSelector];
-    }
-    if (!signature) {
-        signature = [super methodSignatureForSelector:@selector(devNull)];
+    if (signature == nil) {
+        if (self.value != nil) {
+            signature = [self.value methodSignatureForSelector:aSelector];
+        } else {
+            signature = [super methodSignatureForSelector:@selector(devNull)];
+        }
     }
     return signature;
 }
