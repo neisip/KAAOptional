@@ -1,5 +1,6 @@
-
-  ![KAAOptional: Optionals for Objective C](https://raw.githubusercontent.com/neisip/KAAOptional/master/KAAOptional.PNG)
+<p align="center">
+  <a href="https://github.com/neisip/KAAOptional"><img alt="KAAOptional: Optionals for Objective C" src="https://raw.githubusercontent.com/neisip/KAAOptional/master/KAAOptional.PNG"/></a>
+</p>
 
 <p align="center">
   <a href="https://travis-ci.org/neisip/KAAOptional"><img alt="Build status" src="https://travis-ci.org/neisip/KAAOptional.svg?branch=master"/></a>
