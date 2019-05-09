@@ -59,7 +59,7 @@ if let e = fetch() {
 
 # Get functional extensions.
 
-> Now in swift 5.0:
+## Now in swift 5.0:
 
 ```
 var res = "404"
@@ -72,7 +72,8 @@ r > 123 {
 print(res)
 
 ```
-> In Objective-C with KAAOptional using functional extensions:
+## In Objective-C with KAAOptional using functional extensions:
+
 ```
 - (nonnull Optional<NSString *> *)fetch {
     //Some big work
@@ -103,14 +104,14 @@ Supports Java 8 style
 
 # Subscript on Dictionary now returns Optional.
 
-> In swift:
+## In swift:
 ```
 var a = ["K": "V"]["K"] // Returns Optional
 if let a = a { // Unwraps
 
 }
 ```
-In Objective-C using Optional
+## In Objective-C using Optional
 
 You can enable it pointwise by calling *"op"* method on Dictionary.
 Or enable it by default by calling *"[NSDictionary kaa_enableOptionalByDefault]"* once anywhere.
@@ -157,13 +158,13 @@ __auto_type a = @{
 
 # Equality
 
-> In swift
+## In swift
 ```
 var a = ["K": "V"]["K"]
 print(a == "V") // true
 ```
 
-> In Objective-C using KAAOptional
+## In Objective-C using KAAOptional
 ```
 [@{@"K": @"V"}.op[@"K"] isEqual:@"K"] // YES
 ```
