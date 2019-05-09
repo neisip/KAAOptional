@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAE215832262172F0083CD92 /* KAAOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE215792262172F0083CD92 /* KAAOptional.framework */; };
+		FAE215882262172F0083CD92 /* KAAOptionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215872262172F0083CD92 /* KAAOptionalTests.m */; };
+		FAE2158A2262172F0083CD92 /* KAAOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE2157C2262172F0083CD92 /* KAAOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE21596226217890083CD92 /* Optional.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE21594226217890083CD92 /* Optional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE21597226217890083CD92 /* Optional.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE21595226217890083CD92 /* Optional.m */; };
+		FAE2159B226228070083CD92 /* Optional+Generic.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE21599226228070083CD92 /* Optional+Generic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE2159C226228070083CD92 /* Optional+Generic.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE2159A226228070083CD92 /* Optional+Generic.m */; };
+		FAE2159F2263A6470083CD92 /* Optional+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE2159D2263A43E0083CD92 /* Optional+Private.h */; };
+		FAE215A22263AE7C0083CD92 /* Optional+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE215A02263AE7C0083CD92 /* Optional+Convenience.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE215A32263AE7C0083CD92 /* Optional+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215A12263AE7C0083CD92 /* Optional+Convenience.m */; };
+		FAE215A62263BA8A0083CD92 /* OptionalTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215A52263BA8A0083CD92 /* OptionalTestCase.m */; };
+		FAE215AA2263BACD0083CD92 /* NSArray+SafeOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE215A82263BACD0083CD92 /* NSArray+SafeOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE215AB2263BACD0083CD92 /* NSArray+SafeOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215A92263BACD0083CD92 /* NSArray+SafeOptional.m */; };
+		FAE215AE2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE215AC2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE215AF2263BD0C0083CD92 /* NSDictionary+OptionalOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215AD2263BD0C0083CD92 /* NSDictionary+OptionalOverride.m */; };
+		FAE215B22263C4170083CD92 /* NSDictionary+SafeOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE215B02263C4170083CD92 /* NSDictionary+SafeOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE215B32263C4170083CD92 /* NSDictionary+SafeOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215B12263C4170083CD92 /* NSDictionary+SafeOptional.m */; };
+		FAE215B52263D0E80083CD92 /* Optional+ConvenienceTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215B42263D0E80083CD92 /* Optional+ConvenienceTestCase.m */; };
+		FAE215B92263D9DD0083CD92 /* NSObject+KAAComparator.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE215B72263D9DD0083CD92 /* NSObject+KAAComparator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE215BA2263D9DD0083CD92 /* NSObject+KAAComparator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215B82263D9DD0083CD92 /* NSObject+KAAComparator.m */; };
+		FAE215BC2263E35D0083CD92 /* KAANSDictionary_OptionalOverrideTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215BB2263E35D0083CD92 /* KAANSDictionary_OptionalOverrideTestCase.m */; };
+		FAE215BE2263E49C0083CD92 /* KAANSDictionary_SafeOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215BD2263E49C0083CD92 /* KAANSDictionary_SafeOptional.m */; };
+		FAE215C02263E9D90083CD92 /* KAANSArray_SafeOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215BF2263E9D90083CD92 /* KAANSArray_SafeOptional.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAE215842262172F0083CD92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE215702262172F0083CD92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE215782262172F0083CD92;
+			remoteInfo = KAAOptional;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAE215792262172F0083CD92 /* KAAOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KAAOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE2157C2262172F0083CD92 /* KAAOptional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAAOptional.h; sourceTree = "<group>"; };
+		FAE2157D2262172F0083CD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE215822262172F0083CD92 /* KAAOptionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAAOptionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE215872262172F0083CD92 /* KAAOptionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAAOptionalTests.m; sourceTree = "<group>"; };
+		FAE215892262172F0083CD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE21594226217890083CD92 /* Optional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Optional.h; sourceTree = "<group>"; };
+		FAE21595226217890083CD92 /* Optional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Optional.m; sourceTree = "<group>"; };
+		FAE21599226228070083CD92 /* Optional+Generic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Optional+Generic.h"; sourceTree = "<group>"; };
+		FAE2159A226228070083CD92 /* Optional+Generic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Optional+Generic.m"; sourceTree = "<group>"; };
+		FAE2159D2263A43E0083CD92 /* Optional+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Optional+Private.h"; sourceTree = "<group>"; };
+		FAE215A02263AE7C0083CD92 /* Optional+Convenience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Optional+Convenience.h"; sourceTree = "<group>"; };
+		FAE215A12263AE7C0083CD92 /* Optional+Convenience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Optional+Convenience.m"; sourceTree = "<group>"; };
+		FAE215A52263BA8A0083CD92 /* OptionalTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionalTestCase.m; sourceTree = "<group>"; };
+		FAE215A82263BACD0083CD92 /* NSArray+SafeOptional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeOptional.h"; sourceTree = "<group>"; };
+		FAE215A92263BACD0083CD92 /* NSArray+SafeOptional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeOptional.m"; sourceTree = "<group>"; };
+		FAE215AC2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OptionalOverride.h"; sourceTree = "<group>"; };
+		FAE215AD2263BD0C0083CD92 /* NSDictionary+OptionalOverride.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OptionalOverride.m"; sourceTree = "<group>"; };
+		FAE215B02263C4170083CD92 /* NSDictionary+SafeOptional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeOptional.h"; sourceTree = "<group>"; };
+		FAE215B12263C4170083CD92 /* NSDictionary+SafeOptional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeOptional.m"; sourceTree = "<group>"; };
+		FAE215B42263D0E80083CD92 /* Optional+ConvenienceTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Optional+ConvenienceTestCase.m"; sourceTree = "<group>"; };
+		FAE215B72263D9DD0083CD92 /* NSObject+KAAComparator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KAAComparator.h"; sourceTree = "<group>"; };
+		FAE215B82263D9DD0083CD92 /* NSObject+KAAComparator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KAAComparator.m"; sourceTree = "<group>"; };
+		FAE215BB2263E35D0083CD92 /* KAANSDictionary_OptionalOverrideTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAANSDictionary_OptionalOverrideTestCase.m; sourceTree = "<group>"; };
+		FAE215BD2263E49C0083CD92 /* KAANSDictionary_SafeOptional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAANSDictionary_SafeOptional.m; sourceTree = "<group>"; };
+		FAE215BF2263E9D90083CD92 /* KAANSArray_SafeOptional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAANSArray_SafeOptional.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAE215762262172F0083CD92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE2157F2262172F0083CD92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE215832262172F0083CD92 /* KAAOptional.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAE2156F2262172F0083CD92 = {
+			isa = PBXGroup;
+			children = (
+				FAE2157B2262172F0083CD92 /* KAAOptional */,
+				FAE215862262172F0083CD92 /* KAAOptionalTests */,
+				FAE2157A2262172F0083CD92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAE2157A2262172F0083CD92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAE215792262172F0083CD92 /* KAAOptional.framework */,
+				FAE215822262172F0083CD92 /* KAAOptionalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAE2157B2262172F0083CD92 /* KAAOptional */ = {
+			isa = PBXGroup;
+			children = (
+				FAE215932262175E0083CD92 /* Classes */,
+				FAE2157D2262172F0083CD92 /* Info.plist */,
+			);
+			path = KAAOptional;
+			sourceTree = "<group>";
+		};
+		FAE215862262172F0083CD92 /* KAAOptionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE215A42263B8940083CD92 /* Classes */,
+				FAE215872262172F0083CD92 /* KAAOptionalTests.m */,
+				FAE215892262172F0083CD92 /* Info.plist */,
+			);
+			path = KAAOptionalTests;
+			sourceTree = "<group>";
+		};
+		FAE215932262175E0083CD92 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAE215A72263BAA10083CD92 /* Categories */,
+				FAE2157C2262172F0083CD92 /* KAAOptional.h */,
+				FAE21594226217890083CD92 /* Optional.h */,
+				FAE21595226217890083CD92 /* Optional.m */,
+				FAE215A02263AE7C0083CD92 /* Optional+Convenience.h */,
+				FAE215A12263AE7C0083CD92 /* Optional+Convenience.m */,
+				FAE21599226228070083CD92 /* Optional+Generic.h */,
+				FAE2159A226228070083CD92 /* Optional+Generic.m */,
+				FAE2159D2263A43E0083CD92 /* Optional+Private.h */,
+				FAE215B72263D9DD0083CD92 /* NSObject+KAAComparator.h */,
+				FAE215B82263D9DD0083CD92 /* NSObject+KAAComparator.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FAE215A42263B8940083CD92 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAE215A52263BA8A0083CD92 /* OptionalTestCase.m */,
+				FAE215B42263D0E80083CD92 /* Optional+ConvenienceTestCase.m */,
+				FAE215BB2263E35D0083CD92 /* KAANSDictionary_OptionalOverrideTestCase.m */,
+				FAE215BD2263E49C0083CD92 /* KAANSDictionary_SafeOptional.m */,
+				FAE215BF2263E9D90083CD92 /* KAANSArray_SafeOptional.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FAE215A72263BAA10083CD92 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FAE215A82263BACD0083CD92 /* NSArray+SafeOptional.h */,
+				FAE215A92263BACD0083CD92 /* NSArray+SafeOptional.m */,
+				FAE215AC2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h */,
+				FAE215AD2263BD0C0083CD92 /* NSDictionary+OptionalOverride.m */,
+				FAE215B02263C4170083CD92 /* NSDictionary+SafeOptional.h */,
+				FAE215B12263C4170083CD92 /* NSDictionary+SafeOptional.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FAE215742262172F0083CD92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE21596226217890083CD92 /* Optional.h in Headers */,
+				FAE2159B226228070083CD92 /* Optional+Generic.h in Headers */,
+				FAE215B22263C4170083CD92 /* NSDictionary+SafeOptional.h in Headers */,
+				FAE215AA2263BACD0083CD92 /* NSArray+SafeOptional.h in Headers */,
+				FAE215AE2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h in Headers */,
+				FAE215B92263D9DD0083CD92 /* NSObject+KAAComparator.h in Headers */,
+				FAE215A22263AE7C0083CD92 /* Optional+Convenience.h in Headers */,
+				FAE2158A2262172F0083CD92 /* KAAOptional.h in Headers */,
+				FAE2159F2263A6470083CD92 /* Optional+Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FAE215782262172F0083CD92 /* KAAOptional */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE2158D2262172F0083CD92 /* Build configuration list for PBXNativeTarget "KAAOptional" */;
+			buildPhases = (
+				FAE215742262172F0083CD92 /* Headers */,
+				FAE215752262172F0083CD92 /* Sources */,
+				FAE215762262172F0083CD92 /* Frameworks */,
+				FAE215772262172F0083CD92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KAAOptional;
+			productName = KAAOptional;
+			productReference = FAE215792262172F0083CD92 /* KAAOptional.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAE215812262172F0083CD92 /* KAAOptionalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE215902262172F0083CD92 /* Build configuration list for PBXNativeTarget "KAAOptionalTests" */;
+			buildPhases = (
+				FAE2157E2262172F0083CD92 /* Sources */,
+				FAE2157F2262172F0083CD92 /* Frameworks */,
+				FAE215802262172F0083CD92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE215852262172F0083CD92 /* PBXTargetDependency */,
+			);
+			name = KAAOptionalTests;
+			productName = KAAOptionalTests;
+			productReference = FAE215822262172F0083CD92 /* KAAOptionalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAE215702262172F0083CD92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					FAE215782262172F0083CD92 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					FAE215812262172F0083CD92 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = FAE215732262172F0083CD92 /* Build configuration list for PBXProject "KAAOptional" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAE2156F2262172F0083CD92;
+			productRefGroup = FAE2157A2262172F0083CD92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAE215782262172F0083CD92 /* KAAOptional */,
+				FAE215812262172F0083CD92 /* KAAOptionalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAE215772262172F0083CD92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE215802262172F0083CD92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAE215752262172F0083CD92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE21597226217890083CD92 /* Optional.m in Sources */,
+				FAE215AB2263BACD0083CD92 /* NSArray+SafeOptional.m in Sources */,
+				FAE215AF2263BD0C0083CD92 /* NSDictionary+OptionalOverride.m in Sources */,
+				FAE215BA2263D9DD0083CD92 /* NSObject+KAAComparator.m in Sources */,
+				FAE215A32263AE7C0083CD92 /* Optional+Convenience.m in Sources */,
+				FAE2159C226228070083CD92 /* Optional+Generic.m in Sources */,
+				FAE215B32263C4170083CD92 /* NSDictionary+SafeOptional.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE2157E2262172F0083CD92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE215B52263D0E80083CD92 /* Optional+ConvenienceTestCase.m in Sources */,
+				FAE215882262172F0083CD92 /* KAAOptionalTests.m in Sources */,
+				FAE215BE2263E49C0083CD92 /* KAANSDictionary_SafeOptional.m in Sources */,
+				FAE215BC2263E35D0083CD92 /* KAANSDictionary_OptionalOverrideTestCase.m in Sources */,
+				FAE215A62263BA8A0083CD92 /* OptionalTestCase.m in Sources */,
+				FAE215C02263E9D90083CD92 /* KAANSArray_SafeOptional.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAE215852262172F0083CD92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE215782262172F0083CD92 /* KAAOptional */;
+			targetProxy = FAE215842262172F0083CD92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAE2158B2262172F0083CD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAE2158C2262172F0083CD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAE2158E2262172F0083CD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KAAOptional/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alexsoft.KAAOptional;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAE2158F2262172F0083CD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KAAOptional/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alexsoft.KAAOptional;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAE215912262172F0083CD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KAAOptionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alexsoft.KAAOptionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAE215922262172F0083CD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KAAOptionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alexsoft.KAAOptionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAE215732262172F0083CD92 /* Build configuration list for PBXProject "KAAOptional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE2158B2262172F0083CD92 /* Debug */,
+				FAE2158C2262172F0083CD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE2158D2262172F0083CD92 /* Build configuration list for PBXNativeTarget "KAAOptional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE2158E2262172F0083CD92 /* Debug */,
+				FAE2158F2262172F0083CD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE215902262172F0083CD92 /* Build configuration list for PBXNativeTarget "KAAOptionalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE215912262172F0083CD92 /* Debug */,
+				FAE215922262172F0083CD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAE215702262172F0083CD92 /* Project object */;
+}
