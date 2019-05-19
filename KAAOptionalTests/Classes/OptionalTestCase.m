@@ -102,6 +102,12 @@
     XCTAssertFalse([Optional.of(@"123") isEqual:@"1"]);
 }
 
+#pragma mark - Chaining
+
+- (void)testThat_Constructor_ChainsOptionalValue {
+    XCTAssert([Optional.of(Optional.of(@"123")).get isEqualToString:@"123"]);
+}
+
 #pragma mark - MSG send
 
 - (void)testThat_It_CrashesOnWrongMsgSendIfNotEmpty {

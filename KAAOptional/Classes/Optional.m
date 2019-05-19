@@ -22,11 +22,13 @@
 }
 
 - (nonnull instancetype)initWithValue:(nullable const id)aValue {
-    
     if (self = [super init]) {
-        _value = aValue;
+        if ([aValue isKindOfClass:Optional.class]) {
+            _value = ((Optional *)aValue).value;
+        } else {
+            _value = aValue;
+        }
     }
-    
     return self;
 }
 
