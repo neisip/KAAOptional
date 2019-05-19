@@ -157,6 +157,12 @@ __auto_type a = @{
    __unused NSString *b = a[@"K"][0][@"K2"].orElse(@"V2");
 ```
 
+> *And of course - just chain optionals!!!*
+
+```
+NSString *a = Optional.of(Optional.of(@"123")).get;
+```
+
 # Equality
 
 ## In swift
@@ -176,7 +182,7 @@ print(a == "V") // true
 
 ```ruby
 target '<Your Target Name>' do
-    pod 'KAAOptional', '~> 1.0.0'
+    pod 'KAAOptional', '~> 1.0.1'
 end
 ```
 
