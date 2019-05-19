@@ -17,54 +17,54 @@
  Same as +of: method.
  */
 
-@property (nonatomic, copy, readonly, class, nonnull) Optional<SomeType> *(^of)(SomeType _Nonnull aValue);
+@property (nonatomic, copy, readonly, class, nonnull) Optional<SomeType> *_Nonnull (^of)(SomeType _Nonnull aValue);
 
 /**
  Same as +of:as: method.
  */
-@property (nonatomic, copy, readonly, class, nonnull) Optional<SomeType> *(^ofValueAs)(SomeType _Nonnull aValue, Class _Nonnull klass);
+@property (nonatomic, copy, readonly, class, nonnull) Optional<SomeType> * _Nonnull (^ofValueAs)(SomeType _Nonnull aValue, Class _Nonnull klass);
 
 /**
  Same as +ofNullable: method.
  */
-@property (nonatomic, copy, readonly, class, nonnull) Optional<SomeType> *(^ofNullable)(SomeType _Nullable aValue);
+@property (nonatomic, copy, readonly, class, nonnull) Optional<SomeType> * _Nonnull (^ofNullable)(SomeType _Nullable aValue);
 
 /**
  Same as +ofNullable:as: method.
  */
-@property (nonatomic, copy, readonly, class, nonnull) Optional<SomeType> *(^ofNullableAs)(SomeType _Nullable aValue, Class _Nonnull klass);
+@property (nonatomic, copy, readonly, class, nonnull) Optional<SomeType> * _Nonnull (^ofNullableAs)(SomeType _Nullable aValue, Class _Nonnull klass);
 
 /**
  If value is present, returns an Optional describing the value, otherwise returns an Optional produced by the supplying function.
  */
-@property (nonatomic, copy, readonly, nonnull) Optional *(^orVal)(NS_NOESCAPE Optional *(^_Nonnull const orAction)(void));
+@property (nonatomic, copy, readonly, nonnull) Optional  *_Nonnull (^orVal)(NS_NOESCAPE Optional * _Nonnull (^_Nonnull const orAction)(void));
 
 /**
  If a value is present, returns the value, otherwise returns other.
  */
-@property (nonatomic, copy, readonly, nonnull) id (^orElse)(SomeType _Nonnull const);
+@property (nonatomic, copy, readonly, nonnull) id _Nullable (^orElse)(SomeType _Nonnull const);
 
 /**
  If a value is present, returns the value, otherwise returns the result produced by the supplying function
  */
-@property (nonatomic, copy, readonly, nonnull) id (^orElseGet)(NS_NOESCAPE id (^_Nonnull const orElseGetAction)(void));
+@property (nonatomic, copy, readonly, nonnull) id _Nullable (^orElseGet)(NS_NOESCAPE id _Nullable (^_Nonnull const orElseGetAction)(void));
 
 
 /**
  If a value is present, returns an Optional describing (as if ofNullable(T)) the result of applying the given mapping functions to the value, otherwise returns an Optional.empty.
  If the mapping function returns a null result then this method returns an Optional.empty
  */
-@property (nonatomic, copy, readonly, nonnull) Optional *(^map)(NS_NOESCAPE id (^_Nonnull const mapAction)(id _Nonnull aValue));
+@property (nonatomic, copy, readonly, nonnull) Optional *_Nonnull (^map)(NS_NOESCAPE id _Nullable (^_Nonnull const mapAction)(id _Nonnull aValue));
 
 /**
  If a value is present, returns the result of applying the given Optional-bearing mapping function to the value, otherwise returns an empty Optional.
  */
-@property (nonatomic, copy, readonly, nonnull) Optional *(^flatMap)(NS_NOESCAPE Optional *(^_Nonnull const aFlatMapAction)(id _Nonnull aValue));
+@property (nonatomic, copy, readonly, nonnull) Optional *_Nonnull (^flatMap)(NS_NOESCAPE Optional *_Nonnull (^_Nonnull const aFlatMapAction)(id _Nonnull aValue));
 
 /**
  If a value is present and the value matched the given predicate, returns an Optional describing the value, otherwise returns an empty Optional.
  */
-@property (nonatomic, copy, readonly, nonnull) Optional *(^filter)(NS_NOESCAPE BOOL (^_Nonnull const aFilterAction)(id aValue));
+@property (nonatomic, copy, readonly, nonnull) Optional *_Nonnull (^filter)(NS_NOESCAPE BOOL (^_Nonnull const aFilterAction)(id _Nullable aValue));
 
 /**
  If a value is present, performs the given action with the value, otherwise does nothing.

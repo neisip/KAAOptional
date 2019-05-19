@@ -1,5 +1,6 @@
-
-  ![KAAOptional: Optionals for Objective C](https://raw.githubusercontent.com/neisip/KAAOptional/master/KAAOptional.PNG)
+<p align="center">
+  <a href="https://github.com/neisip/KAAOptional"><img alt="KAAOptional: Optionals for Objective C" src="https://raw.githubusercontent.com/neisip/KAAOptional/master/KAAOptional.PNG"/></a>
+</p>
 
 <p align="center">
   <a href="https://travis-ci.org/neisip/KAAOptional"><img alt="Build status" src="https://travis-ci.org/neisip/KAAOptional.svg?branch=master"/></a>
@@ -81,7 +82,7 @@ print(res)
     return Optional.of(@"123");
 }
 
-__auto_type const a = [[[self fetchResult] filter:^BOOL(NSString * _Nonnull aValue) {
+__auto_type const a = [[[self fetch] filter:^BOOL(NSString * _Nonnull aValue) {
       return aValue.integerValue > 123 && [aValue isKindOfClass:[NSString class]];
   }] orElse:@"404"];
 
@@ -89,7 +90,7 @@ NSLog(@"%@", a);
 ```  
 > or with .dot notation
 ```
-__auto_type const b = [self fetchResult]
+__auto_type const b = [self fetch]
   .filter(^BOOL(NSString * _Nonnull aValue) {
       return aValue.integerValue > 123 && [aValue isKindOfClass:[NSString class]];
   }).orElse(@"404");

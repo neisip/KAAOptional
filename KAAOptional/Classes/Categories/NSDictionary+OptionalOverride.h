@@ -43,7 +43,7 @@
 
  @return Same dictionary, but returns optionals on subscript.
  */
-- (instancetype)op;
+- (nonnull instancetype)op;
 
 /**
  Will return Optional with object for Key or Optional empty if value doesn't exist.
@@ -56,7 +56,7 @@
 /**
  Shows if optional mode is enabled
  */
-@property (nonatomic, copy, readonly) NSNumber *kaa_shouldReturnOptional;
+@property (nonatomic, copy, readonly, nonnull) NSNumber *kaa_shouldReturnOptional;
 
 /**
  

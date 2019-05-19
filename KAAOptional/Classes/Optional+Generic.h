@@ -20,7 +20,7 @@
  @return Optional with nonnull value or Optional from supplier block
  */
 
-- (nonnull Optional<SomeType> *)orVal:(NS_NOESCAPE Optional<SomeType> *(^_Nonnull const)(void))orValSupplier;
+- (nonnull Optional<SomeType> *)orVal:(NS_NOESCAPE Optional<SomeType> *_Nonnull (^_Nonnull const)(void))orValSupplier;
 
 /**
  If a value is present, returns the value, otherwise returns other.
@@ -36,7 +36,7 @@
  @param elseValSupplier Block which returns value in case of nil
  @return Contained value if it isn't nil or value passed by supply block
  */
-- (SomeType _Nonnull)orElseGet:(NS_NOESCAPE SomeType (^_Nonnull const)(void))elseValSupplier;
+- (SomeType _Nonnull)orElseGet:(NS_NOESCAPE SomeType _Nullable (^_Nonnull const)(void))elseValSupplier;
 
 /**
  If a value is present, returns an Optional describing (as if by ofNullable:) the result of applying the given function to the value, otherwise returns an empty Optional.
@@ -45,7 +45,7 @@
  @param aMapAction action which returns mapped value
  @return Optional describing (as if by ofNullable:) the result of applying map function
  */
-- (nonnull Optional *)map:(NS_NOESCAPE id (^_Nonnull const)(SomeType _Nonnull aValue))aMapAction;
+- (nonnull Optional *)map:(NS_NOESCAPE id _Nullable (^_Nonnull const)(SomeType _Nonnull aValue))aMapAction;
 
 /**
  If a value is present, returns the result of applying the given Optional-bearing mapping function to the value, otherwise returns an empty Optional
@@ -53,7 +53,7 @@
  @param aFlatMapAction action which should return mapped value contained in Optional
  @return If a value is present, returns the result of applying the given Optional-bearing mapping the function to the value, otherwise returns an empty Optional
  */
-- (nonnull Optional *)flatMap:(NS_NOESCAPE Optional *(^_Nonnull const)(SomeType _Nonnull aValue))aFlatMapAction;
+- (nonnull Optional *)flatMap:(NS_NOESCAPE Optional *_Nonnull (^_Nonnull const)(SomeType _Nonnull aValue))aFlatMapAction;
 
 /**
  If a value is present, and it matches the given predicate, returns an Optional describing the value, otherwise returns an empty Optional
