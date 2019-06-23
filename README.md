@@ -182,7 +182,7 @@ print(a == "V") // true
 
 ```ruby
 target '<Your Target Name>' do
-    pod 'KAAOptional', '~> 1.0.1'
+    pod 'KAAOptional', '~> 1.0.2'
 end
 ```
 
