@@ -11,24 +11,9 @@
 
 @implementation NSDictionary (OptionalOverride)
 
-- (void)setKaa_shouldReturnOptional:(NSNumber *)kaa_shouldReturnOptional {
-    objc_setAssociatedObject(self, @selector(kaa_shouldReturnOptional), kaa_shouldReturnOptional, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (NSNumber *)kaa_shouldReturnOptional {
-    return objc_getAssociatedObject(self, @selector(kaa_shouldReturnOptional));
-}
-
-- (instancetype)op {
-    self.kaa_shouldReturnOptional = @(YES);
-    return self;
-}
-
 - (Optional *)objectForKeyedSubscript:(id)key {
     id obj = [self objectForKey:key];
-    BOOL isOptional = self.kaa_shouldReturnOptional.boolValue ||
-    shouldEnableOptionalByDefault;
-    if (!isOptional) {
+    if (!shouldEnableOptionalByDefault) {
         return obj;
     }
     NSParameterAssert(key != nil);

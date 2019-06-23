@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Optional.h"
+@import KAAOptional;
 
 
 static NSNumber *kOptionalGenericStubNumber() {

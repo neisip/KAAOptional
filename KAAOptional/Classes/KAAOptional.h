@@ -20,6 +20,3 @@ FOUNDATION_EXPORT const unsigned char KAAOptionalVersionString[];
 #import <KAAOptional/NSObject+KAAComparator.h>
 #import <KAAOptional/NSArray+SafeOptional.h>
 #import <KAAOptional/NSDictionary+SafeOptional.h>
-#import <KAAOptional/NSDictionary+OptionalOverride.h>
-
-

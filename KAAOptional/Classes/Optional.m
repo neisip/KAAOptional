@@ -66,7 +66,7 @@
     return self.value;
 }
 
-- (NSArray *)stream {
+- (NSArray *)list {
     return self.hasValue ? @[self.value] : @[];
 }
 

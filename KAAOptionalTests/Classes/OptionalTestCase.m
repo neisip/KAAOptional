@@ -7,8 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Optional.h"
-#import "NSDictionary+OptionalOverride.h"
+@import KAAOptional;
 
 @interface OptionalTestCase : XCTestCase
 @property (nonatomic, strong, nullable) Optional *sut;
@@ -49,14 +48,14 @@
     XCTAssert([sut.op[@"K1"][@"K2"].get isEqualToString:@"V"]);
 }
 
-#pragma mark - stream
+#pragma mark - list
 
-- (void)testThat_Stream_ReturnsArrayWithOneElementIfOptionalHasValue {
-    XCTAssert([Optional of:@"S"].stream.count == 1);
+- (void)testThat_List_ReturnsArrayWithOneElementIfOptionalHasValue {
+    XCTAssert([Optional of:@"S"].list.count == 1);
 }
 
-- (void)testThat_Stream_ReturnArrayWithZeroElementsIfOptionalIsEmpty {
-    XCTAssert(Optional.empty.stream.count == 0);
+- (void)testThat_List_ReturnArrayWithZeroElementsIfOptionalIsEmpty {
+    XCTAssert(Optional.empty.list.count == 0);
 }
 
 #pragma mark - subscript

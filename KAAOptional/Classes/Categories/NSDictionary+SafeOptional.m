@@ -7,8 +7,13 @@
 //
 
 #import "NSDictionary+SafeOptional.h"
+#import "NSDictionary+OptionalOverride.h"
 
 @implementation NSDictionary (SafeOptional)
+
+- (nonnull Optional *)op {
+    return Optional.of(self);
+}
 
 - (nonnull Optional *)kaa_optionalForKey:(nonnull id)aKey __attribute__((pure)) {
     NSParameterAssert(aKey != nil);

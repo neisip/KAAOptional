@@ -7,8 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Optional.h"
-#import "NSDictionary+OptionalOverride.h"
+@import KAAOptional;
 
 @interface KAANSDictionary_OptionalOverrideTestCase : XCTestCase
 

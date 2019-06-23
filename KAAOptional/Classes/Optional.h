@@ -41,7 +41,7 @@ KAA_FINAL
  If value is present, returns an array containing only that value, otherwise returns
  an empty array
  */
-@property (nonatomic, copy, readonly, nonnull) NSArray<SomeType> *stream;
+@property (nonatomic, copy, readonly, nonnull) NSArray<SomeType> *list;
 
 /**
  Returns empty optional
@@ -107,5 +107,7 @@ KAA_FINAL
 + (nonnull instancetype)new NS_UNAVAILABLE;
 - (nonnull instancetype)init NS_UNAVAILABLE;
 @end
+
+//This is needed for library optimization
 #import <KAAOptional/Optional+Generic.h>
 #import <KAAOptional/Optional+Convenience.h>

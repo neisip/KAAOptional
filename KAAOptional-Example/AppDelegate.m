@@ -43,7 +43,7 @@
         return aValue.integerValue > 123 && [aValue isKindOfClass:[NSString class]];
     }] /* Returns Optional.empty */ orVal:^Optional<NSString *> *{
         return Optional.of(@404);
-    }] /* Returns Optional with 404 */stream]; /*Returns Array with 404 */
+    }] /* Returns Optional with 404 */list]; /*Returns Array with 404 */
     
     //or .dot notation, thought not so good with type inference and autocompletion : (
     
@@ -52,7 +52,7 @@
         return aValue.integerValue > 123 && [aValue isKindOfClass:[NSString class]];
     }).orVal(^Optional<NSString *> *{
         return Optional.of(@404);
-    }).stream;
+    }).list;
 }
 
 - (nonnull Optional<NSString *> *)fetchResult {
@@ -64,7 +64,8 @@
     __auto_type a = @{
                       @"K": @[@{@"K2": @"V"}]
                       };
-    //By using subscript, you get optional! An it can be chained!
+    
+    //By using subscript, you get optional! And it can be chained!
     __unused NSString *b = a[@"K"][0][@"K2"].orElse(@"V2");
 }
 

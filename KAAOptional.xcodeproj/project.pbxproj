@@ -20,7 +20,7 @@
 		FAE215A62263BA8A0083CD92 /* OptionalTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215A52263BA8A0083CD92 /* OptionalTestCase.m */; };
 		FAE215AA2263BACD0083CD92 /* NSArray+SafeOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE215A82263BACD0083CD92 /* NSArray+SafeOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAE215AB2263BACD0083CD92 /* NSArray+SafeOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215A92263BACD0083CD92 /* NSArray+SafeOptional.m */; };
-		FAE215AE2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE215AC2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE215AE2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE215AC2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h */; };
 		FAE215AF2263BD0C0083CD92 /* NSDictionary+OptionalOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215AD2263BD0C0083CD92 /* NSDictionary+OptionalOverride.m */; };
 		FAE215B22263C4170083CD92 /* NSDictionary+SafeOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE215B02263C4170083CD92 /* NSDictionary+SafeOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAE215B32263C4170083CD92 /* NSDictionary+SafeOptional.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE215B12263C4170083CD92 /* NSDictionary+SafeOptional.m */; };
@@ -181,11 +181,11 @@
 				FAE2159B226228070083CD92 /* Optional+Generic.h in Headers */,
 				FAE215B22263C4170083CD92 /* NSDictionary+SafeOptional.h in Headers */,
 				FAE215AA2263BACD0083CD92 /* NSArray+SafeOptional.h in Headers */,
-				FAE215AE2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h in Headers */,
 				FAE215B92263D9DD0083CD92 /* NSObject+KAAComparator.h in Headers */,
 				FAE215A22263AE7C0083CD92 /* Optional+Convenience.h in Headers */,
 				FAE2158A2262172F0083CD92 /* KAAOptional.h in Headers */,
 				FAE2159F2263A6470083CD92 /* Optional+Private.h in Headers */,
+				FAE215AE2263BD0C0083CD92 /* NSDictionary+OptionalOverride.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
